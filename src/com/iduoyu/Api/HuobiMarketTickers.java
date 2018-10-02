@@ -72,8 +72,8 @@ public class HuobiMarketTickers {
                     change = (double)Math.round(change*100)/100;//涨幅率 百分之取小数点两位-------入库
                     int exchange=1; //交易所为huobi-------入库
                     String sql="insert into detail (symbol,realtimeprices,dayvolume,dayturnvolume,exchange,dailyincrease) values(?,?,?,?,?,?)";
-                    String detailSql="select * from detail where symbol=?";
-                    String updataSql="update detail set realtimeprices=?,dayvolume=?,dayturnvolume=?,dailyincrease=? where symbol=?";
+                    String detailSql="select * from detail where symbol=? and exchange=1";
+                    String updataSql="update detail set realtimeprices=?,dayvolume=?,dayturnvolume=?,dailyincrease=? where symbol=? and exchange=1";
                     System.out.println(data.getJSONObject(i));
                     if (DetailData.getDetailData(detailSql,coin)==null){
                         UpdateData.UpdateOneData(sql,coin,coinpriceclose,amount,vol,exchange,change);
