@@ -1,6 +1,7 @@
 package com.iduoyu.Servlet;
 
 import com.iduoyu.Time.MyTask;
+import com.iduoyu.Time.MyTask1;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Timer;
 
 
@@ -17,9 +19,11 @@ import java.util.Timer;
 @WebServlet(name = "OpenServlet",urlPatterns = "/open")
 public class OpenServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Timer timer = new Timer();
-        timer.schedule(new MyTask(), 1000, 10000);  //1秒后执行，并且每隔10000毫秒重复执行
 
+        Timer timer = new Timer();
+        Timer timer1 = new Timer();
+        timer.schedule(new MyTask(), 1000, 10000);  //1秒后执行，并且每隔10000毫秒重复执行
+        timer1.schedule(new MyTask1(), 1000, 10000);
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {

@@ -27,8 +27,9 @@ public class DetailFilter implements Filter {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        request.setAttribute("detailDatas",detailDatas);
+
         System.out.println(detailDatas);
+        request.setAttribute("detailDatas",detailDatas);
 
         chain.doFilter(req, resp);
     }

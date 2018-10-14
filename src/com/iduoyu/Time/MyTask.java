@@ -1,6 +1,5 @@
 package com.iduoyu.Time;
 
-import com.iduoyu.Api.HuobiApi;
 import com.iduoyu.Api.HuobiMarketTickers;
 
 import java.text.Format;
@@ -16,6 +15,7 @@ public class MyTask extends TimerTask {
             //记录开启时间
             Format format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
             System.out.println("当前时间：" + format.format(new Date()));
+
             HuobiMarketTickers.huobiMarketTickers();
 
             //测试线程是否安全  是否有抢线程情况

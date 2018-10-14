@@ -1,45 +1,39 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
+<html><head>
     <title>Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.1.1.js"></script>
 
     <style type="text/css">
         .container {
             width: 1200px !important;
         }
     </style>
-
-
 </head>
 <body>
 <div class="container">
-
-
-
     <div class="row">
-        <table class="table table-hover table-bordered">
-            <thead>
-            <tr>
-                <th id="th1">#</th> 
-                <th id="th2">交易对</th> 
-                <th id="th3">实时价格</th>                           
-                <th id="th4">价格</th>                        
-                <th id="th5">涨幅(24h)</th>                     
-                <th id="th6">成交量(24h)</th>  
-                <th id="th7">成交额(24h)</th>  
-                <th id="th8">交易所</th>   
-            </tr> 
-            </thead>
-            <tr><td>123</td><td>123</td><td>123</td><td>123</td><td>123</td><td>123</td><td>123</td><td>123</td></tr>
-            <tr><td>123</td><td>123</td><td>123</td><td>123</td><td>123</td><td>123</td><td>123</td><td>123</td></tr>
-            </table>
-
+        &nbsp;
+        &nbsp;
+        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
+        &nbsp;&nbsp;
+        &nbsp;
+        <table id="change" class="table table-hover "><thead>
+        <tr>
+            <td id="th1">#</td><td id="th2">交易对</td><td id="th3">实时价格</td><td id="th4">涨幅(24h)</td><td id="th5">成交量(24h)</td><td id="th6">成交额(24h)</td><td id="th7">交易所</td></tr>
+        </thead><tr><td>1</td><td>socusdt</td><td>0.0184</td><td><font color="red">5.81</font></td><td>50916852</td><td>908092</td><td>1</td></tr><tr><td>1</td><td>iotausdt</td><td>0.556</td><td><font color="red">0.4</font></td><td>470437</td><td>263811</td><td>1</td></tr><tr><td>1</td><td>qtumusdt</td><td>3.86</td><td><font color="red">1.85</font></td><td>402726</td><td>1561137</td><td>1</td></tr><tr><td>1</td><td>etcusdt</td><td>11.2447</td><td><font color="red">0.84</font></td><td>406836</td><td>4578944</td><td>1</td></tr><tr><td>1</td><td>ltcusdt</td><td>60.15</td><td><font color="red">0.05</font></td><td>132728</td><td>8035023</td><td>1</td></tr><tr><td>1</td><td>ethusdt</td><td>227.89</td><td><font color="red">-0.06</font></td><td>193611</td><td>44465525</td><td>1</td></tr><tr><td>1</td><td>wiccusdt</td><td>0.2877</td><td><font color="red">14.66</font></td><td>18958249</td><td>5141841</td><td>1</td></tr><tr><td>1</td><td>cmtusdt</td><td>0.1034</td><td><font color="red">2.07</font></td><td>5442813</td><td>560251</td><td>1</td></tr><tr><td>1</td><td>ocnusdt</td><td>0.01149029</td><td><font color="red">-20.72</font></td><td>1468439765</td><td>19348349</td><td>1</td></tr><tr><td>1</td><td>xlmusdt</td><td>0.252897</td><td><font color="red">-2.47</font></td><td>1655178</td><td>426582</td><td>1</td></tr><tr><td>1</td><td>gntusdt</td><td>0.1604</td><td><font color="red">5.33</font></td><td>2183481</td><td>346190</td><td>1</td></tr><tr><td>1</td><td>storjusdt</td><td>0.2702</td><td><font color="red">1.12</font></td><td>319442</td><td>86346</td><td>1</td></tr><tr><td>1</td><td>btmusdt</td><td>0.1972</td><td><font color="red">6.54</font></td><td>7652565</td><td>1491243</td><td>1</td></tr><tr><td>1</td><td>actusdt</td><td>0.0337</td><td><font color="red">5.96</font></td><td>27071591</td><td>931245</td><td>1</td></tr><tr><td>1</td><td>ctxcusdt</td><td>0.4021</td><td><font color="red">30.2</font></td><td>18191047</td><td>6855388</td><td>1</td></tr><tr><td>1</td><td>neousdt</td><td>18.5</td><td><font color="red">0.27</font></td><td>24057</td><td>448347</td><td>1</td></tr><tr><td>1</td><td>sntusdt</td><td>0.038014</td><td><font color="red">3.16</font></td><td>8795530</td><td>333468</td><td>1</td></tr><tr><td>1</td><td>cvcusdt</td><td>0.1242</td><td><font color="red">1.14</font></td><td>1270823</td><td>158279</td><td>1</td></tr><tr><td>1</td><td>ontusdt</td><td>1.981</td><td><font color="red">0.88</font></td><td>2115937</td><td>4218117</td><td>1</td></tr><tr><td>1</td><td>btsusdt</td><td>0.1126</td><td><font color="red">1.44</font></td><td>2342668</td><td>263516</td><td>1</td></tr><tr><td>1</td><td>adausdt</td><td>0.083009</td><td><font color="red">-0.16</font></td><td>27935601</td><td>2342507</td><td>1</td></tr><tr><td>1</td><td>iostusdt</td><td>0.013315</td><td><font color="red">4.28</font></td><td>638327316</td><td>8760055</td><td>1</td></tr><tr><td>1</td><td>smtusdt</td><td>0.021423</td><td><font color="red">14.5</font></td><td>23187878</td><td>470448</td><td>1</td></tr><tr><td>1</td><td>elfusdt</td><td>0.3684</td><td><font color="red">6.2</font></td><td>5558749</td><td>2014481</td><td>1</td></tr><tr><td>1</td><td>xemusdt</td><td>0.1101</td><td><font color="red">11.23</font></td><td>10433147</td><td>1132116</td><td>1</td></tr><tr><td>1</td><td>elausdt</td><td>7.3562</td><td><font color="red">3.69</font></td><td>67541</td><td>499736</td><td>1</td></tr><tr><td>1</td><td>mdsusdt</td><td>0.023441</td><td><font color="red">5.31</font></td><td>19401613</td><td>449457</td><td>1</td></tr><tr><td>1</td><td>trxusdt</td><td>0.022073</td><td><font color="red">1.16</font></td><td>437987792</td><td>9676735</td><td>1</td></tr><tr><td>1</td><td>thetausdt</td><td>0.0942</td><td><font color="red">5.26</font></td><td>9297661</td><td>864668</td><td>1</td></tr><tr><td>1</td><td>dtausdt</td><td>0.00408028</td><td><font color="red">10.62</font></td><td>1664401587</td><td>7314369</td><td>1</td></tr><tr><td>1</td><td>letusdt</td><td>0.013</td><td><font color="red">-8.4</font></td><td>454864484</td><td>6874062</td><td>1</td></tr><tr><td>1</td><td>nasusdt</td><td>1.7417</td><td><font color="red">2.86</font></td><td>683928</td><td>1199631</td><td>1</td></tr><tr><td>1</td><td>zilusdt</td><td>0.038339</td><td><font color="red">7.81</font></td><td>65013607</td><td>2432856</td><td>1</td></tr><tr><td>1</td><td>ruffusdt</td><td>0.025721</td><td><font color="red">10.02</font></td><td>44251729</td><td>1095906</td><td>1</td></tr><tr><td>1</td><td>itcusdt</td><td>0.2795</td><td><font color="red">4.41</font></td><td>3932030</td><td>1096957</td><td>1</td></tr><tr><td>1</td><td>hptusdt</td><td>0.008794</td><td><font color="red">-4.74</font></td><td>167117586</td><td>1540929</td><td>1</td></tr><tr><td>1</td><td>steemusdt</td><td>0.9832</td><td><font color="red">-3.1</font></td><td>196671</td><td>196963</td><td>1</td></tr><tr><td>1</td><td>dashusdt</td><td>185.65</td><td><font color="red">0.68</font></td><td>22924</td><td>4277801</td><td>1</td></tr><tr><td>1</td><td>omgusdt</td><td>3.5882</td><td><font color="red">1.02</font></td><td>1094573</td><td>3948698</td><td>1</td></tr><tr><td>1</td><td>zecusdt</td><td>126.73</td><td><font color="red">-0.77</font></td><td>26544</td><td>3377451</td><td>1</td></tr><tr><td>1</td><td>eosusdt</td><td>5.6385</td><td><font color="red">0.75</font></td><td>6520427</td><td>37132514</td><td>1</td></tr><tr><td>1</td><td>xrpusdt</td><td>0.5589</td><td><font color="red">0.96</font></td><td>71748303</td><td>40665275</td><td>1</td></tr><tr><td>1</td><td>bchusdt</td><td>537.23</td><td><font color="red">1.72</font></td><td>54480</td><td>29325845</td><td>1</td></tr><tr><td>1</td><td>btcusdt</td><td>6557.7</td><td><font color="red">-0.09</font></td><td>6559</td><td>43228186</td><td>1</td></tr><tr><td>1</td><td>bixusdt</td><td>0.412945</td><td><font color="red">0.99</font></td><td>658178</td><td>272366</td><td>1</td></tr><tr><td>1</td><td>paiusdt</td><td>0.188137</td><td><font color="red">0.59</font></td><td>14788972</td><td>2827255</td><td>1</td></tr><tr><td>1</td><td>vetusdt</td><td>0.01307</td><td><font color="red">2.57</font></td><td>30594685</td><td>397305</td><td>1</td></tr></table>
     </div>
-
-
 </div>
-</body>
-</html>
+<script>
+
+
+
+
+
+
+</script>
+
+
+</body></html>
